@@ -1,9 +1,10 @@
-# jekyll模板fork自 HuxBlog Boilerplate
+# jekyll模板fork自 [HuxBlog Boilerplate](https://github.com/Huxpro/huxpro.github.io)
 
-##### This is the boilerplate of [Hux Blog](https://github.com/Huxpro/huxpro.github.io), all documents is over there!
+##### [Hux Blog](https://github.com/Huxpro/huxpro.github.io)里有详细的文档。
 
-#### [View Boilerplate &rarr;](http://huangxuan.me/huxblog-boilerplate/)
+#### [预览模板 &rarr;](http://huangxuan.me/huxblog-boilerplate/)
 
-#### [View Live Hux Blog &rarr;](http://huangxuan.me)
+#### [Hux Blog（原作者的blog） &rarr;](http://huangxuan.me)
+#### [Cheng Blog（我的blog） &rarr;](http://https://cheng-ya.github.io/)
 
-## If you like Hux Blog, Please star [huxpro.github.io repo](https://github.com/Huxpro/huxpro.github.io) instead of this! Thank you!
+## 十分感谢[原作者](http://huangxuan.me)的分享，如果你也喜欢他的模板, 可以给 [huxpro.github.io repo](https://github.com/Huxpro/huxpro.github.io) 这个项目一个star。
