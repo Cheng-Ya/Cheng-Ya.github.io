@@ -2,7 +2,7 @@
 layout:     post
 title:      "Welcome to Cheng Blog"
 subtitle:   " \"Hello World, Hello Blog\""
-date:       2017-03--09 17:00:00
+date:       2017-03-09 17:00:00
 author:     "Cheng"
 header-img: "img/post-bg-2015.jpg"
 tags:
