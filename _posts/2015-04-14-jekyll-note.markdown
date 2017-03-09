@@ -1,20 +1,19 @@
 ---
 layout:     post
-title:      "Example Post"
-subtitle:   "不适合人类阅读，非常水的自我笔记"
-date:       2015-04-14
-author:     "Hux"
+title:      "使用jekyll搭建个人博客"
+subtitle:   "简单的记录下如何使用Jekyll搭建博客"
+date:       2017-03-09
+author:     "Cheng"
 header-img: "img/post-bg-unix-linux.jpg"
 tags:
-    - OS
-    - Unix
-    - Linux
+    - 博客搭建
 ---
 
-> This document is not completed and will be updated anytime.
+> 文章不够完善，随时可能会更新。
 
 
-## Catagory
+
+## 目录
 
 1. [Unix](#unix)
 	1. [Bell Labs](#bell-labs)
