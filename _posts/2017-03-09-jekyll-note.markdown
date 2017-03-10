@@ -4,7 +4,7 @@ title:      "使用jekyll搭建个人博客"
 subtitle:   "简单的记录下如何使用Jekyll搭建博客"
 date:       2017-03-09
 author:     "Cheng"
-header-img: "http://omkrno85z.bkt.clouddn.com/post-bg-about%20Jekyll.jpg"
+header-img: "img/post-bg-about Jekyll.jpg"
 tags:
     - 博客搭建
 ---
