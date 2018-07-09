@@ -72,11 +72,14 @@ Git 仓库目录是 Git 用来保存项目的元数据和对象数据库的地�
 如果你想获得一份已经存在了的 Git 仓库的拷贝，比如说，开发组有了新的项目，项目负责人已经为每个开发人员安排了具体的开发任务并为该项目初始化了 Git 仓库，那么你将首先使用 ```git clone``` 命令拷贝远程服务器上的新建项目。当然你也可以直接通过储存介质直接去你同事\老大的机器上拷贝已经初始化好的整个项目(一定是整个项目，特别是要完整的拷贝 ```.git``` 文件夹)或者直接Download Git 仓库中的项目压缩包，这和你使用 ```git clone``` 命令得到的项目近乎相同，你仍然可以对直接拷贝过来的项目使用 ```git add <file name>``` 命令暂存文件或者其他命令对文件进行操作。但考虑到我们正在使用 Git ,使用直接拷贝的方法显得很落后，而且一点也不geek，所以除非在你们的远程服务器已经挂掉了的情况下，不建议这样做。
 
 克隆仓库的命令格式是 ```git clone [url]``` 。下面是使用命令行克隆 Git 仓库的过程。我们假设你要克隆神奇的 [shadowsocks](https://github.com/shadowsocks) 项目，你已经通过你可爱的同事知道了该项目的git地址为: https://github.com/shadowsocks/shadowsocks.git ，你决定将该项目克隆到你的 ```workspace``` 文件夹，那么首先你应该 ```cd``` 到 ```workspace``` 文件夹(假设 ```workspace``` 文件夹在 ```home``` 目录中)，命令如下
+
 ```
 $ cd ~/workspace
 $ git clone https://github.com/shadowsocks/shadowsocks.git
 ```
+
 正常过程:
+
 ```
 Cloning into 'shadowsocks'...
 remote: Counting objects: 3632, done.
@@ -85,12 +88,15 @@ Receiving objects: 100% (3632/3632), 923.47 KiB | 135.00 KiB/s, done.
 Resolving deltas: 100% (2423/2423), done.
 Checking connectivity... done.
 ```
+
 使用 ```ls``` 命令，你可以在 ```workspace``` 文件夹中看到你刚刚克隆下来的 ```shadowsocks``` 文件夹。
 
 你也可以自定义本地仓库的名字，例如你想让 ```shadowsocks``` 项目在克隆到本地时，被命名为 ```amazing``` ，那么你可以使用如下命令
+
 ```
 $ git clone https://github.com/shadowsocks/shadowsocks.git amazing
 ```
+
 这将执行与上一个命令相同的操作，不过在本地创建的项目名字变为 ```amazing``` 。
 
 Git 支持多种数据传输协议。 上面的例子使用的是 ```https://``` 协议，不过你也可以使用 ```git://``` 协议或者使用 SSH 传输协议，比如 ```git@github.com:shadowsocks/shadowsocks.git``` 。使用 SSH 传输协议需要配置相应的 SSH key，后面我们将提到配置的方式。
@@ -98,6 +104,7 @@ Git 支持多种数据传输协议。 上面的例子使用的是 ```https://```
 考虑到 [shadowsocks](https://github.com/shadowsocks) 项目并未对普通用户开放完整的操作权限，而后面我们需要学习 ```git push```等会和远程仓库发生交互的命令，因此我们使用前面学习到的知识，克隆一个完全开放了操作权限的项目(我们命名该仓库为 ```测试仓库``` )，在后面的内容中，所有和远程仓库的交互都将和 ```测试仓库``` 进行。
 
 我们将使用 ```git://``` 协议克隆 ```测试仓库``` 到 ```workspace```文件夹中
+
 ```
 $ cd ~/workspace
 $ git clone git@github.com:Cheng-Ya/git_study_test.git
@@ -108,17 +115,21 @@ $ git clone git@github.com:Cheng-Ya/git_study_test.git
 ### 初始化仓库
 
 如果你打算使用 Git 来对现有的项目进行管理，你只需要进入该项目目录并输入：
+
 ```
 $ git init
 ```
+
 该命令将创建一个名为 .git 的子目录，这个子目录含有你初始化的 Git 仓库中所有的必须文件，这些文件是 Git 仓库的骨干。 但是，在这个时候，我们仅仅是做了一个初始化的操作，你的项目里的文件还没有被跟踪。
 
 如果你是在一个已经存在文件的文件夹（而不是空文件夹）中初始化 Git 仓库来进行版本控制的话，你应该开始跟踪这些文件并提交。 你可通过 git add 命令来实现对指定文件的跟踪，然后执行 git commit 提交：
+
 ```
 $ git add .
 $ git add SOME_FILE
 $ git commit -m 'first commit'
 ```
+
 后面我们再逐一解释每一条指令的意思。 现在，你已经得到了一个实际维护（或者说是跟踪）着若干个文件的 Git 仓库。
 
 参考: [Git手册](https://git-scm.com/book/zh/v2)
